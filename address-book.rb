@@ -1,8 +1,9 @@
 require 'sinatra/base'
 
+require 'slim'
+
 class AddressBook < Sinatra::Base
   get '/' do
-  	# printing H W to the browser...
-    'Hello World!'
+  	slim :home
   end
 end
